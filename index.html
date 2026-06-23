@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Portflio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Shruti
+        </div>
+
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+        <section id="hero">
+
+    <div class="hero-content">
+
+        <h1>Hi, I'm Shruti </h1>
+
+        <h2 class="typing"></h2>
+
+        <p>
+            Turning ideas into powerful digital experiences with modern web technologies.
+        </p>
+
+        <div class="hero-buttons">
+            <button>View Projects</button>
+            <button class="contact-btn">Contact Me</button>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="shrutiimage.png" alt="Shruti">
+    </div>
+
+</section>
+
+<script>
+const roles = [
+    "Java Developer",
+    "Full Stack Developer",
+    "Web Designer",
+    "Problem Solver",
+    "Tech Enthusiast"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let currentRole = "";
+let isDeleting = false;
+
+function typeEffect() {
+
+    const typingElement = document.querySelector(".typing");
+
+    currentRole = roles[roleIndex];
+
+    if (!isDeleting) {
+
+        typingElement.textContent =
+        currentRole.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if (charIndex === currentRole.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 3500);
+            return;
+        }
+
+    } else {
+
+        typingElement.textContent =
+        currentRole.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if (charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+        }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
+</script>
+</section>
+
+
+        <section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <p>
+                Hi, I'm Shruti Shelake, a Computer Science Engineering student passionate about web development and technology.
+            </p>
+
+            <p>
+                I enjoy creating responsive websites, learning modern technologies, and continuously improving my programming skills.
+            </p>
+
+            <p>
+                Currently, I'm focusing on HTML, CSS, JavaScript, Java, Data Structures & Algorithms, Git & GitHub, and Full Stack Development.
+            </p>
+
+            <p>
+                My goal is to become a skilled Full Stack Developer and build impactful digital solutions that solve real-world problems.
+            </p>
+
+        </div>
+
+        <div class="about-cards">
+
+            <div class="card">
+                <h3>🎓</h3>
+                <p>CSE Student</p>
+            </div>
+
+            <div class="card">
+                <h3>💻</h3>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀</h3>
+                <p>Java Learner</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <<section id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Git</div>
+        <div class="skill-card">GitHub</div>
+        <div class="skill-card">DSA</div>
+        <div class="skill-card">SQL</div>
+
+    </div>
+
+</section>
+
+    <section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>🍽️ Shruti's Cafe Website</h3>
+            <p>
+                A responsive restaurant website built using HTML and CSS with an attractive UI design.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>👨‍🎓 Student Profile Card</h3>
+            <p>
+                A clean student profile card showcasing personal information using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>💧 Drink Water Reminder App</h3>
+            <p>
+                A Python application that reminds users to stay hydrated throughout the day.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>🌐 Developer Portfolio</h3>
+            <p>
+                A modern personal portfolio website with animations, responsive design, and project showcase.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="contact">
+
+    <h2>Let's Connect</h2>
+
+    <p class="contact-text">
+        Have a project in mind or just want to say hello?
+        Feel free to reach out.
+    </p>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <h3>📧 Email</h3>
+            <p>shrutishelake31@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>💻 GitHub</h3>
+            <p>https://github.com/shrutishelake31-arch</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>📱 Instagram</h3>
+            <p>shrutiiii__31</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Shruti Shelake • Built with Passion & Code  </p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+h1 {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: black;
+    align-self: self-start;
+
+}
+
+h2 {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: black;
+    align-content: center;
+
+}
+
+h3 {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: black;
+    align-content: center;
+
+
+}
+
+input {
+   input{
+    width:300px;
+    height:45px;
+
+    margin-top:10px;
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    padding-left:15px;
+}
+
+button{
+    width:300px;
+    height:45px;
+
+    border-radius:10px;
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: purple;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
