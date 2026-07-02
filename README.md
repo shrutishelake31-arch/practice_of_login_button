@@ -1,6 +1,6 @@
 # 📊 Profile Dashboard
 
-A modern and responsive **Profile Dashboard** built using **HTML and CSS**. This project displays a user profile, learning progress, skill cards, streak tracker, and a progress button in a clean dashboard layout.
+A modern and responsive **Profile Dashboard** built using **HTML and CSS**. This project displays a user profile, learning progress, skill cards, streak tracker, and a progress button in a clean dashboard layout.IT helped me to learn and create more unique layouts.
 
 ## ✨ Features
 
